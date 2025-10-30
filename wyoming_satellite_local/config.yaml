@@ -1,5 +1,5 @@
 name: Wyoming Satellite Local
-version: "1.0.1"
+version: "1.0.2"
 slug: wyoming_satellite_local
 description: Wyoming Satellite mit Audio-Zugriff für Assist-Pipeline
 arch:
