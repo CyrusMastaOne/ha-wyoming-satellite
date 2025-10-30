@@ -1,11 +1,9 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-# Install dependencies (python3 is already in base-python image)
+# Install only essential packages
+# Note: parecord and paplay should be available via the audio: true mount
 RUN apk add --no-cache \
-    pulseaudio \
-    alsa-utils-libs \
-    alsa-lib \
     jq \
     bash
 
