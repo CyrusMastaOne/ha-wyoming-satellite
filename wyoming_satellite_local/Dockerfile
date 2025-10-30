@@ -1,10 +1,8 @@
-ARG BUILD_FROM=ghcr.io/home-assistant/aarch64-base-python:3.11-alpine3.19
+ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-# Install dependencies
+# Install dependencies (python3 is already in base-python image)
 RUN apk add --no-cache \
-    python3 \
-    py3-pip \
     pulseaudio-utils \
     alsa-utils \
     jq \
