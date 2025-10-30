@@ -3,8 +3,9 @@ FROM ${BUILD_FROM}
 
 # Install dependencies (python3 is already in base-python image)
 RUN apk add --no-cache \
-    pulseaudio-utils \
-    alsa-utils \
+    pulseaudio \
+    alsa-utils-libs \
+    alsa-lib \
     jq \
     bash
 
